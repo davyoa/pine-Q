@@ -26,7 +26,7 @@ const props = defineProps<{
 
         <div class="flex items-center gap-3">
           <slot name="buttons" />
-          <div class="flex flex-row items-center gap-3">
+          <!-- <div class="flex flex-row items-center gap-3">
             <Avatar>
               <AvatarImage src="https://github.com/unovue.png" alt="@unovue" />
               <AvatarFallback>CN</AvatarFallback>
@@ -35,17 +35,18 @@ const props = defineProps<{
               <h1 class="text-sm font-semibold">David Houde</h1>
               <p class="text-sm">User</p>
             </div>
-          </div>
+          </div> -->
         </div>
 
       </div>
     </header>
 
     <!-- Main Page -->
-    <main class="grid grid-cols-[auto_1fr] gap-4">
-      <AppSidebar v-if="props.showSidebar"/>
+    <main class="grid grid-cols-[auto_1fr] gap-4 mb-6">
+      <!-- <AppSidebar v-if="props.showSidebar"/> -->
 
       <slot />
+
     </main>
   </div>
 </template>

@@ -27,7 +27,7 @@
         <Separator class="mb-4" />
 
         <!--  Responsive grid with proper spacing -->
-        <div v-if="!loader" class="grid gap-4 grid-cols-4">
+        <div v-if="!loader" class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <StudyDeck v-for="deck in localDecks.decks.value" :deck="deck" :key="deck.id">
             <template #actions>
               <Button variant="ghost" size="sm" @click="localDecks.deleteDeck(deck.id)" title="Delete Deck" class="text-red-500 hover:bg-red-100 hover:text-red-600">
