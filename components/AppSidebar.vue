@@ -6,9 +6,6 @@ const route = useRoute()
 
 const navItems = [
   { name: "Home", path: "/home", icon: Home },
-  // { name: "Flash Cards", path: "/flashcards", icon: Layers2 },
-  // { name: "Study", path: "/study", icon: NotebookText },
-  // { name: "Community", path: "/community", icon: Users}
 ]
 </script>
 

@@ -7,7 +7,7 @@
 
 const router = useRouter();
 
-const loggedIn = false;
+const loggedIn = true;
 
 if(loggedIn){
     router.push('/home');
