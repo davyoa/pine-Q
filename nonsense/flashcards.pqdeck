@@ -1,0 +1,49 @@
+{
+  "id": "57653dtedx",
+  "title": "Random Topic",
+  "type": "flashcard",
+  "item_count": 50,
+  "created_at": "2023-10-01T10:00:00Z",
+  "content": [
+    {
+      "front": "What is a variable in programming?",
+      "back": "A variable is a named storage location in a program's memory that holds a value, which can be modified during program execution."
+    },
+    {
+      "front": "What is the purpose of a loop in programming?",
+      "back": "A loop repeatedly executes a block of code as long as a specified condition is true, used for tasks like iterating over data or performing repetitive operations."
+    },
+    {
+      "front": "What is a function in programming?",
+      "back": "A function is a reusable block of code that performs a specific task, often taking inputs (parameters) and returning an output."
+    },
+    {
+      "front": "What is the difference between a list and an array in Python?",
+      "back": "A list in Python is a dynamic, mutable collection of heterogeneous elements, while an array (from the array module or NumPy) is typically fixed-type and optimized for numerical operations."
+    },
+    {
+      "front": "What is object-oriented programming (OOP)?",
+      "back": "OOP is a programming paradigm that organizes code into objects, which combine data (attributes) and behaviors (methods), emphasizing concepts like encapsulation, inheritance, and polymorphism."
+    },
+    {
+      "front": "What is a conditional statement?",
+      "back": "A conditional statement (e.g., if-else) controls the flow of a program by executing specific code blocks based on whether a condition evaluates to true or false."
+    },
+    {
+      "front": "What is the role of a compiler in programming?",
+      "back": "A compiler translates high-level source code into machine code or an intermediate form, enabling a computer to execute the program."
+    },
+    {
+      "front": "What is a data structure?",
+      "back": "A data structure is a specialized format for organizing, storing, and managing data to enable efficient access and modification, such as arrays, lists, or trees."
+    },
+    {
+      "front": "What is recursion in programming?",
+      "back": "Recursion is a process where a function calls itself to solve smaller instances of the same problem, often used for tasks like traversing trees or computing factorials."
+    },
+    {
+      "front": "What is the difference between stack and heap memory?",
+      "back": "Stack memory stores temporary variables and function call data in a last-in, first-out order, while heap memory stores dynamically allocated data with more flexible lifetimes."
+    }
+  ]
+}

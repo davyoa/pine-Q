@@ -1,0 +1,159 @@
+{
+  "id": "234jjjh",
+  "title": "Random Topic",
+  "type": "flashcards",
+  "item_count": 50,
+  "created_at": "2023-10-01T10:00:00Z",
+  "content" : [
+    {
+      "question": "What is the primary purpose of a variable in programming?",
+      "options": [
+        "To store a single, unchangeable value",
+        "To hold data that can be modified during program execution",
+        "To define the structure of a function",
+        "To manage hardware resources directly"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which of the following best describes a loop in programming?",
+      "options": [
+        "A block of code that executes only once",
+        "A structure that repeats code based on a condition",
+        "A method to store multiple values in one variable",
+        "A way to define object properties"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a function in programming primarily used for?",
+      "options": [
+        "To store large datasets",
+        "To execute a reusable block of code for a specific task",
+        "To manage memory allocation",
+        "To define the program's user interface"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "In Python, what distinguishes a list from an array (e.g., NumPy array)?",
+      "options": [
+        "Lists are immutable, arrays are mutable",
+        "Lists support heterogeneous data, arrays are typically fixed-type",
+        "Lists are used only for numerical data, arrays for text",
+        "Lists are stored in heap memory, arrays in stack memory"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which concept is central to object-oriented programming (OOP)?",
+      "options": [
+        "Sequential execution of code",
+        "Organizing code into objects with attributes and methods",
+        "Direct manipulation of hardware",
+        "Using loops for all operations"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does a conditional statement do in a program?",
+      "options": [
+        "Repeats code until a condition is met",
+        "Executes code based on whether a condition is true or false",
+        "Stores multiple values in a single variable",
+        "Defines the structure of a class"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the role of a compiler in programming?",
+      "options": [
+        "To execute code line by line",
+        "To translate high-level code into machine code",
+        "To manage runtime errors",
+        "To design user interfaces"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What defines a data structure in computer science?",
+      "options": [
+        "A way to write reusable code",
+        "A format for organizing and storing data efficiently",
+        "A method for hardware optimization",
+        "A tool for debugging programs"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is recursion in programming?",
+      "options": [
+        "A function that calls itself to solve smaller instances of a problem",
+        "A loop that runs indefinitely",
+        "A method to allocate memory dynamically",
+        "A way to store data in arrays"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "What is the key difference between stack and heap memory?",
+      "options": [
+        "Stack is for dynamic data, heap for static data",
+        "Stack is last-in, first-out; heap is for flexible allocation",
+        "Stack stores objects, heap stores primitive types",
+        "Stack is slower than heap for data access"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is encapsulation in object-oriented programming?",
+      "options": [
+        "Combining multiple functions into one",
+        "Bundling data and methods that operate on that data",
+        "Executing code in parallel threads",
+        "Optimizing memory usage"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Which data structure uses a Last-In, First-Out (LIFO) order?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Array",
+        "Linked List"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is the purpose of the 'if-else' statement in programming?",
+      "options": [
+        "To repeat code multiple times",
+        "To make decisions based on conditions",
+        "To store multiple data types",
+        "To define reusable code blocks"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What does polymorphism allow in object-oriented programming?",
+      "options": [
+        "Objects to share the same memory space",
+        "Different classes to be treated as instances of a common superclass",
+        "Code to run faster",
+        "Variables to store multiple values simultaneously"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "What is a binary search algorithm used for?",
+      "options": [
+        "Sorting a list of elements",
+        "Finding an element in a sorted list efficiently",
+        "Storing data in a tree structure",
+        "Executing code in parallel"
+      ],
+      "correct": 1
+    }
+  ]
+}
