@@ -14,7 +14,7 @@ const inputMethod = ref("upload");
 const uploadedContent = ref("");
 const uploadedFileName = ref("");
 const deckTitle = ref("");
-const deckType = ref("flashcard");
+const deckType = ref("quiz");
 
 const emit = defineEmits<{
   (e: "new-study-deck-info", content: string, title: string, deckType: string): void;
@@ -110,7 +110,7 @@ const handleOnDone = () => {
               <SelectGroup>
                 <SelectItem value="flashcard">Flashcards</SelectItem>
                 <SelectItem value="quiz">Quiz</SelectItem>
-                <SelectItem value="summary">Summaries</SelectItem>
+                <!-- <SelectItem value="summary">Summaries</SelectItem> -->
               </SelectGroup>
             </SelectContent>
           </Select>

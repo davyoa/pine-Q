@@ -101,7 +101,6 @@ const removeFile = () => {
 </script>
 
 <template>
-  <Toaster />
   <div class="space-y-4">
     <Card
       class="border-2 border-dashed transition-colors cursor-pointer"

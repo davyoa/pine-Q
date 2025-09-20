@@ -17,7 +17,7 @@ const props = defineProps<{
     <header class="w-full z-20">
       <div class="card-primary flex items-center justify-between h-full p-2">
         <div class="flex flex-row gap-2">
-          <img src="/Favicon.ico" alt="App Logo" class="h-8 w-8" />
+          <img src="/favicon.ico" alt="App Logo" class="h-8 w-8" />
           <h1>
             <span class="text-2xl font-bold">Pine-Q</span> | 
             <span >{{ props.pageTitle }}</span>
@@ -42,11 +42,15 @@ const props = defineProps<{
     </header>
 
     <!-- Main Page -->
-    <main class="grid grid-cols-[auto_1fr] gap-4 mb-6">
-      <!-- <AppSidebar v-if="props.showSidebar"/> -->
+    <!-- <main class="grid grid-cols-[auto_1fr] gap-4 mb-6 w-full">
+      <AppSidebar v-if="props.showSidebar"/>
 
       <slot />
 
+    </main> -->
+
+    <main class="mb-6 w-full">
+      <slot />
     </main>
   </div>
 </template>
