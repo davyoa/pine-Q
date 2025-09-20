@@ -85,6 +85,14 @@
 </template>
 
 <script setup lang="ts">
+import { useHead } from '#imports'
+useHead({
+  title: 'Home',
+  meta: [
+    { name: 'description', content: 'Welcome to Pine-Q - Your study assistant.' }
+  ]
+})
+
 import { Download, FilePlus, Plus, Trash2 } from "lucide-vue-next"
 import Separator from "~/components/ui/separator/Separator.vue"
 import { downloadDeck } from "~/lib/exportDeck";
