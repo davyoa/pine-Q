@@ -50,7 +50,7 @@ definePageMeta({
       <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
         <!-- Logo -->
         <div class="flex items-center gap-2 cursor-pointer">
-          <img src="/Favicon.ico" alt="App Logo" class="h-8 w-8" />
+          <img src="/public/logo.ico" alt="App Logo" class="h-8 w-8" />
           <span class="font-bold text-lg">Pine-Q</span>
         </div>
 
