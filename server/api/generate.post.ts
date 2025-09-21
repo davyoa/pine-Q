@@ -3,11 +3,11 @@ import { defineEventHandler, readBody, createError, getRequestIP } from 'h3';
 import { generateFlashcards, generateQuiz } from '~/lib/groq';
 import { supabase } from '~/lib/supabase';
 import { randomUUID } from 'uncrypto';
-import { type Flashcard, StudyDeck, Quiz } from '~/types/appTypes';
+import { type StudyDeck} from '~/types/appTypes';
 
 export default defineEventHandler(async (event) => {
   try {
-    const { content, type, title } = await readBody(event);
+    const { content, type, title, ip: clientIP } = await readBody(event);
 
     if (!content || !type || !title) {
       throw createError({
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
     }
 
     // --- Get IP Address (Native H3 way) ---
-    const ip = getRequestIP(event) || 'unknown';
+    const ip = clientIP || getRequestIP(event) || 'unknown';
 
     // --- Log Request into Supabase ---
     await supabase.rpc('log_request', {

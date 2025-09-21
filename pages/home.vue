@@ -99,6 +99,7 @@ import { downloadDeck } from "~/lib/exportDeck";
 import { useLocalDecks } from "~/lib/useLocalDecks";
 import type { StudyDeck } from "~/types/appTypes";
 import { useToast } from "~/lib/useToast";
+import { getPublicIP } from '~/lib/getPublicIp';
 
 const toast = useToast();
 const loader = ref(false)
@@ -112,17 +113,20 @@ interface GenerateResponse {
   deck: StudyDeck
 }
 
+
 const localDecks = useLocalDecks([]);
 
 const handleContent = async (StudyContent: string, title: string, deckType: string) => {
   try {
     loader.value = true;
+    const ip = await getPublicIP();
     const response = await $fetch<GenerateResponse>('/api/generate', {
       method: 'POST',
       body: { 
         content: StudyContent,
         title,
         type: deckType,
+        ip: ip
       },
     });
 
