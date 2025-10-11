@@ -60,6 +60,13 @@ const handleFileSelect = async (file: File) => {
       return;
     }
 
+    const GROK_LIMIT = 32000;
+    const SYSTEM_PROMPT_BUFFER = 1000;
+    const MAX_CONTENT_LENGTH = GROK_LIMIT - SYSTEM_PROMPT_BUFFER;
+    if (content.length > MAX_CONTENT_LENGTH) {
+      content = content.slice(0, MAX_CONTENT_LENGTH);
+    }
+
     emit("file-content", content, file.name);
     toast.success("File uploaded successfully!");
   } catch (error) {

@@ -39,7 +39,7 @@ export default defineEventHandler(async (event) => {
       });
     }
 
-    console.log(generatedContent)
+    // console.log(generatedContent)
 
     const id = randomUUID();
     const created_at = new Date().toISOString();
