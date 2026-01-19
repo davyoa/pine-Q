@@ -1,7 +1,6 @@
 // server/api/generate.post.ts
 import { defineEventHandler, readBody, createError, getRequestIP } from 'h3';
 import { generateFlashcards, generateQuiz } from '~/lib/groq';
-import { supabase } from '~/lib/supabase';
 import { randomUUID } from 'uncrypto';
 import { type StudyDeck} from '~/types/appTypes';
 
@@ -15,15 +14,6 @@ export default defineEventHandler(async (event) => {
         statusMessage: 'Missing required fields',
       });
     }
-
-    // --- Get IP Address (Native H3 way) ---
-    const ip = clientIP || getRequestIP(event) || 'unknown';
-
-    // --- Log Request into Supabase ---
-    await supabase.rpc('log_request', {
-      ip_addr: ip,
-      req_type: type,
-    });
 
     // --- Generate Content ---
     let generatedContent: any[] = [];
